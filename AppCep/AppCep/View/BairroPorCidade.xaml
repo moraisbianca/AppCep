@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppCep.View.BairroPorCidade">
-    <ContentView.Content>
+    <ContentPage.Content>
 
         <AbsoluteLayout HorizontalOptions="FillAndExpand"
                       VerticalOptions="FillAndExpand">
@@ -19,14 +19,14 @@
                         </Picker.Items>
                     </Picker>
 
-                    <Picker x:Name="lst_bairros"
-                            SelectedIndexChanged="lst_bairros_SelectedIndexChanged"
+                    <Picker x:Name="pck_cidade"
+                            SelectedIndexChanged="pck_cidade_SelectedIndexChanged"
                             ItemDisplayBinding="{Binding descricao}"
                             Title="Selecione a Cidade">
                     </Picker>
                 </StackLayout>
 
-                <ListView x:Name="lst_bairros">
+                <ListView x:Name="lst_bairro">
                     <ListView.Header>
                         <StackLayout>
                             <Label Text="Nome do Bairro" />
@@ -63,5 +63,5 @@
 
         </AbsoluteLayout>
 
-    </ContentView.Content>
-</ContentView>
+    </ContentPage.Content>
+</ContentPage>

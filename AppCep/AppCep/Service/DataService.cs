@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 //https://cep.metoda.com.br/endereco/by-cep?cep=17206439
 
-//https://cep.metoda.com.br/logradouro/by-bairro?id_cidade=4874&bairro=Jardim America
+//https://cep.metoda.com.br/logradouro/by-bairro?id_cidade=4874&bairro=JardimAmerica
 
 //https://cep.metoda.com.br/cep/by-logradouro?logradouro=
 
@@ -60,6 +60,27 @@ namespace AppCep.Service
                     throw new Exception(response.RequestMessage.Content.ToString());
 
                 return arr_bairros;
+            }
+        }
+
+        public static async Task<List<Cidade>> GetCidadeByEstado(string uf)
+        {
+            List<Cidade> arr_cidades = new List<Cidade>();
+
+            using (HttpClient client = new HttpClient())
+            {
+                HttpResponseMessage response = await client.GetAsync("http://cep.metoda.com.br/cidade/by_uf?id_uf=" + uf);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string json = response.Content.ReadAsStringAsync().Result;
+
+                    arr_cidades = JsonConvert.DeserializeObject<List<Cidade>>(json);
+                }
+                else
+                    throw new Exception(response.RequestMessage.Content.ToString());
+
+                return arr_cidades;
             }
         }
     }
