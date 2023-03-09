@@ -13,12 +13,15 @@
                    Text="Api Busca CEP" />
 
 
-            <Button Grid.Row="1" Grid.Column="0" Text="" />
-            <Button Grid.Row="1" Grid.Column="1" Text="" />
-
-            <Button Grid.Row="2" Grid.Column="0" Text="" />
-            <Button Grid.Row="2" Grid.Column="0" Text="" />
+            <Button Grid.Row="1" Grid.Column="0"
+                    Text="Buscar Cep" Clicked="Button_Clicked"/>
             
+            <Button Grid.Row="1" Grid.Column="1" 
+                    Text="Buscar Cidades" />
+
+            <Button Grid.Row="2" Grid.Column="0"
+                    Text="Buscar Ruas de Bairro"/>
+
         </Grid>
         
         
