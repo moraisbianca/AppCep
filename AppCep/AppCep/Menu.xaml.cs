@@ -17,9 +17,24 @@ namespace AppCep
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void CepByLogradouro(object sender, EventArgs e)
         {
             Navigation.PushAsync(new View.BuscaCepPorLogradouro());
+        }
+
+        private void LogradouroByCep(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.BuscaLogradouroByCep());
+        }
+
+        private void BairroPorCidade(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.BairroPorCidade());
+        }
+
+        private void CidadeByEstado(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.BuscaCidadeByEstado());
         }
     }
 }
