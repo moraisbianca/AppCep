@@ -17,15 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="View\BuscaCidadeByEstado.xaml.cs">
-      <DependentUpon>BuscaCidadeByEstado.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="View\BuscaLogradouroByCep.xaml.cs">
-      <DependentUpon>BuscaLogradouroByCep.xaml</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Update="Menu.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

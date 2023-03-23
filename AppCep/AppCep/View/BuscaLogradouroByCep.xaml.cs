@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace AppCep.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class BuscaLogradouro : ContentPage
+    public partial class BuscaLogradouroByCep : ContentPage
     {
-        public BuscaLogradouro()
+        public BuscaLogradouroByCep()
         {
             InitializeComponent();
         }
