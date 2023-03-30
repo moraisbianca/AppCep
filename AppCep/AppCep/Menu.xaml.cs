@@ -36,5 +36,10 @@ namespace AppCep
         {
             Navigation.PushAsync(new View.BuscaCidadeByEstado());
         }
+
+        private void LogradouroByBairro(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.BuscaLogByEstadoCidadeBairro());
+        }
     }
 }

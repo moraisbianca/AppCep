@@ -6,7 +6,7 @@
     <ContentPage.Content>
 
         <Grid ColumnDefinitions="*,*"
-              RowDefinitions="*,*,*,*">
+              RowDefinitions="*,*,*,*,*">
 
             <Label Grid.Row="0" Grid.Column="0"
                    Grid.ColumnSpan="2"
@@ -14,20 +14,21 @@
 
 
             <Button Grid.Row="1" Grid.Column="0"
-                    Text="Buscar Cep" Clicked="CepByLogradouro"/>
+                    Text="BUSCAR CEP POR ENDEREÇO" Clicked="CepByLogradouro"/>
 
             <Button Grid.Row="1" Grid.Column="1"
-                    Text="Buscar Ruas de Bairro" Clicked="LogradouroByCep"/>
+                    Text="BUSCAR ENDEREÇO POR CEP" Clicked="LogradouroByCep"/>
 
             <Button Grid.Row="2" Grid.Column="0"
-                    Text="Buscar Bairro" Clicked="BairroPorCidade"/>
-            
+                    Text="BUSCAR BAIRRO POR CIDADE" Clicked="BairroPorCidade"/>
+
             <Button Grid.Row="2" Grid.Column="1" 
-                    Text="Buscar Cidades" Clicked="CidadeByEstado"/>
+                    Text="BUSCAR CIDADE POR ESTADO" Clicked="CidadeByEstado"/>
 
-            
+            <Button Grid.Row="3" Grid.Column="0"
+                    Text="BUSCAR RUAS POR BAIRRO" Clicked="LogradouroByBairro" />
 
-            
+
 
         </Grid>
         
